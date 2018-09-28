@@ -1,2 +1,13 @@
-<h1>Animals#new</h1>
-<p>Find me in app/views/animals/new.html.erb</p>
+<h1>New Animal!</h1>
+<%= form_for @animal do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.submit %>
+<% end %>
